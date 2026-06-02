@@ -156,8 +156,8 @@ function App() {
           </div>
           <div className="footer-col">
             <h4 className="footer-col-title">Company</h4>
-            <a href="/contact-us" className="footer-col-link">About Us</a>
-            <a href="mailto:contact@univerin.in" className="footer-col-link">contact@univerin.in</a>
+            <a href="/contact-us" className="footer-col-link">About</a>
+            <a href="/contact-us" className="footer-col-link">Contact</a>
           </div>
         </div>
         <div className="footer-bottom">
