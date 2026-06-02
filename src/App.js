@@ -162,7 +162,7 @@ function App() {
         </div>
         <div className="footer-bottom">
           <span>© 2026 Univerin Private Limited. All rights reserved.</span>
-          <span>Made in India 🇮🇳</span>
+          <span>Made in India &nbsp;🇮🇳</span>
         </div>
       </footer>
     </div>
