@@ -138,21 +138,32 @@ function App() {
         </div>
       </section>
 
-      <footer>
-        <a href="/#" className="footer-logo">
-          <img src={logo} alt="Univerin" height="34" />
-        </a>
-        <a href="mailto:contact@univerin.in" className="footer-email">contact@univerin.in</a>
-        <div className="footer-links">
-          <a href="/privacy-policy" className="footer-link">Privacy Policy</a>
-          <span className="footer-divider">|</span>
-          <a href="/terms-and-conditions" className="footer-link">Terms & Conditions</a>
-          <span className="footer-divider">|</span>
-          <a href="/refund-policy" className="footer-link">Refund Policy</a>
-          <span className="footer-divider">|</span>
-          <a href="/contact-us" className="footer-link">Contact Us</a>
+      <footer className="footer-new">
+        <div className="footer-grid">
+          <div className="footer-col footer-brand">
+            <a href="/#" className="footer-logo">
+              <img src={logo} alt="Univerin" height="34" />
+            </a>
+            <p className="footer-desc">Your city's hyperlocal delivery platform. Order from local shops near you.</p>
+            <p className="footer-desc">We are a technology facilitator — not a direct seller of goods.</p>
+          </div>
+          <div className="footer-col">
+            <h4 className="footer-col-title">Legal</h4>
+            <a href="/privacy-policy" className="footer-col-link">Privacy Policy</a>
+            <a href="/terms-and-conditions" className="footer-col-link">Terms &amp; Conditions</a>
+            <a href="/refund-policy" className="footer-col-link">Refund Policy</a>
+            <a href="/contact-us" className="footer-col-link">Cancellation Policy</a>
+          </div>
+          <div className="footer-col">
+            <h4 className="footer-col-title">Company</h4>
+            <a href="/contact-us" className="footer-col-link">About Us</a>
+            <a href="mailto:contact@univerin.in" className="footer-col-link">contact@univerin.in</a>
+          </div>
         </div>
-        <div className="footer-copy">© 2026 Univerin Private Limited</div>
+        <div className="footer-bottom">
+          <span>© 2026 Univerin Private Limited. All rights reserved.</span>
+          <span>Made in India 🇮🇳</span>
+        </div>
       </footer>
     </div>
   );

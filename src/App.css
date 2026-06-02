@@ -98,3 +98,20 @@ footer{background:#111827;padding:32px 60px;display:flex;align-items:center;just
 .modal-location{background:#eff6ff;color:#2563eb;padding:10px 16px;border-radius:100px;font-size:13px;font-weight:600;margin:16px 0}
 .modal-btn{background:#2563eb;color:#fff;border:none;padding:14px 40px;border-radius:100px;font-size:16px;font-weight:700;cursor:pointer;margin-top:8px;transition:transform 0.2s}
 .modal-btn:hover{transform:translateY(-2px)}
+
+/* ── New Footer ── */
+.footer-new { background: #0f1729; padding: 48px 24px 0; }
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px; max-width: 1000px; margin: 0 auto; padding-bottom: 40px; }
+.footer-brand .footer-logo { display: inline-block; margin-bottom: 14px; }
+.footer-desc { color: #94a3b8; font-size: 13px; line-height: 1.7; margin: 0 0 6px; max-width: 280px; }
+.footer-col-title { color: #fff; font-size: 12px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; margin: 0 0 16px; }
+.footer-col { display: flex; flex-direction: column; gap: 10px; }
+.footer-col-link { color: #94a3b8; font-size: 14px; text-decoration: none; transition: color 0.2s; }
+.footer-col-link:hover { color: #fff; }
+.footer-bottom { border-top: 1px solid #1e293b; padding: 16px 0; max-width: 1000px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+.footer-bottom span { color: #64748b; font-size: 12px; }
+@media (max-width: 640px) {
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .footer-brand { grid-column: 1 / -1; }
+  .footer-bottom { flex-direction: column; gap: 6px; text-align: center; }
+}
