@@ -1,4 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import PrivacyPolicy from './PrivacyPolicy';
+import TermsAndConditions from './TermsAndConditions';
+import RefundPolicy from './RefundPolicy';
+import ContactUs from './ContactUs';
 import logo from './app-logo-full.png';
 import screenshot from './app-screenshot.png';
 import './App.css';
@@ -138,10 +143,33 @@ function App() {
           <img src={logo} alt="Univerin" height="34" />
         </a>
         <a href="mailto:contact@univerin.in" className="footer-email">contact@univerin.in</a>
+        <div className="footer-links">
+          <a href="/privacy-policy" className="footer-link">Privacy Policy</a>
+          <span className="footer-divider">|</span>
+          <a href="/terms-and-conditions" className="footer-link">Terms & Conditions</a>
+          <span className="footer-divider">|</span>
+          <a href="/refund-policy" className="footer-link">Refund Policy</a>
+          <span className="footer-divider">|</span>
+          <a href="/contact-us" className="footer-link">Contact Us</a>
+        </div>
         <div className="footer-copy">© 2026 Univerin Private Limited</div>
       </footer>
     </div>
   );
 }
 
-export default App;
+function AppWrapper() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+        <Route path="/refund-policy" element={<RefundPolicy />} />
+        <Route path="/contact-us" element={<ContactUs />} />
+      </Routes>
+    </Router>
+  );
+}
+
+export default AppWrapper;
