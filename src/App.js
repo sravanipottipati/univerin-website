@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import DeleteAccount from './DeleteAccount';
 import PrivacyPolicy from './PrivacyPolicy';
 import TermsAndConditions from './TermsAndConditions';
 import RefundPolicy from './RefundPolicy';
@@ -178,6 +179,7 @@ function AppWrapper() {
         <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
         <Route path="/refund-policy" element={<RefundPolicy />} />
         <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/delete-account" element={<DeleteAccount />} />
       </Routes>
     </Router>
   );
