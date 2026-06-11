@@ -154,6 +154,7 @@ function App() {
             <a href="/terms-and-conditions" className="footer-col-link">Terms &amp; Conditions</a>
             <a href="/refund-policy" className="footer-col-link">Refund Policy</a>
             <a href="/contact-us" className="footer-col-link">Cancellation Policy</a>
+            <a href="/delete-account" className="footer-col-link">Delete Account</a>
           </div>
           <div className="footer-col">
             <h4 className="footer-col-title">Company</h4>
