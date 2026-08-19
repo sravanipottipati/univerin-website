@@ -161,6 +161,7 @@ function App() {
             <h4 className="footer-col-title">Company</h4>
             <a href="/contact-us" className="footer-col-link">About</a>
             <a href="/contact-us" className="footer-col-link">Contact</a>
+            <a href="https://api.univerin.in/admin/" target="_blank" rel="noopener noreferrer" className="footer-col-link">Admin Login</a>
           </div>
         </div>
         <div className="footer-bottom">
