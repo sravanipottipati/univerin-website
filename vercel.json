@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    {
+      "source": "/admin",
+      "destination": "https://api.univerin.in/admin/",
+      "permanent": false
+    },
+    {
+      "source": "/admin/",
+      "destination": "https://api.univerin.in/admin/",
+      "permanent": false
+    }
+  ]
+}
